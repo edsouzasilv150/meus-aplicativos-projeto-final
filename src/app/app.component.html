@@ -22,7 +22,7 @@
             APPs
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/dashboard']">Dashboard</a></li>
               <li role="separator" class="divider"></li>
               <li><a class="dropdown-item" href="#">Calculadora</a></li>
               <li><a class="dropdown-item" href="#">Conversor de moedas</a></li>
@@ -34,6 +34,10 @@
     </div>
   </div>
 </nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
 
 
 
