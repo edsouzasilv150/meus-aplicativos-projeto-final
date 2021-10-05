@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './dashboard';
+import { CalculadoraModule } from './calculadora';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { DashboardModule } from './dashboard';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     DashboardModule,
+    CalculadoraModule,
     AppRoutingModule
     
   ],
